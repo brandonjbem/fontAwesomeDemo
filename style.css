@@ -1,0 +1,31 @@
+#social {
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	text-align: center;
+	line-height: 100px;
+	background-color: #4875B4;
+	font-size: 60px;
+	transition: 1s;
+}
+
+#social:last-child {
+	background-color: #333;
+}
+
+@keyframes bounce {
+	0% { transform: translateY(0); }
+	25% { transform: translateY(-10px) rotate(6deg); }
+	50% { transform: translateY(0) rotate(-12deg); }
+	75% { transform: translateY(-10px) rotate(12deg); }
+	100% { transform: translateY(0) rotate(-6deg); }
+}
+
+.animate {
+	animation: bounce 1s infinite;
+	position: relative;
+}
+
+#social a i {
+	color: white;
+}
